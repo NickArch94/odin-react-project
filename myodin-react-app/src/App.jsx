@@ -8,15 +8,15 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+      <div className="flex justify-between">
+        <a href="https://vite.dev" target="_blank" className="h-50 w-50 logo flex justify-start">
+          <img src={viteLogo} alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href="https://react.dev" target="_blank" className="h-50 w-50 logo react flex justify-end">
+          <img src={reactLogo} alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>I'm Going Through Changes</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           {count} changes
