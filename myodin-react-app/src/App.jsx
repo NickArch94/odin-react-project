@@ -10,10 +10,10 @@ function App() {
     <>
       <div className="flex justify-between h-30 w-30">
         <a href="https://vite.dev" target="_blank" className="logo flex justify-start">
-          <img src={viteLogo} className="h-50 w-50" alt="Vite logo" />
+          <img src={viteLogo} className="h-50 w-50 pl-16" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank" className="logo react flex justify-end">
-          <img src={reactLogo} className="h-30 w-30" alt="React logo" />
+          <img src={reactLogo} className="pr-16 h-30 w-30" alt="React logo" />
         </a>
       </div>
       <h1>I'm Going Through Changes</h1>
