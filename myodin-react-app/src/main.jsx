@@ -4,11 +4,13 @@ import './index.css'
 import App from './App.jsx'
 import Greeting from './Greeting.jsx'
 import About from './About.jsx'
+import ButterySmoothLists from './ButterySmoothLists.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
     <Greeting />
     <About />
+    <ButterySmoothLists />
   </StrictMode>,
 )
