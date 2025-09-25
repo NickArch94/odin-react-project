@@ -20,4 +20,23 @@ return (
  )
 }
 
-export default Person
+function UsersVictim() {
+    const [victim, setVictim] = useState("")
+
+    return (
+        <>
+          <h1>Create Your Own Victim to Age!</h1>
+          <input
+            type="text"
+            placeholder="Enter victim's name"
+            value={victim}
+            onChange={(event) => setVictim(event.target.value)}
+            />
+        </>
+    )
+}
+
+export {
+    Person,
+    UsersVictim
+}
