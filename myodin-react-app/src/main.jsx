@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Greeting from './Greeting.jsx'
 import About from './About.jsx'
 import ButterySmoothLists from './ButterySmoothLists.jsx'
+import Person from './Person2Person.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -12,5 +13,6 @@ createRoot(document.getElementById('root')).render(
     <Greeting />
     <About />
     <ButterySmoothLists />
+    <Person />
   </StrictMode>,
 )

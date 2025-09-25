@@ -16,6 +16,7 @@ function List(props) {
     )
 }
 
+//Parameter-based component, defined values used if no props are passed
 let Button = ({text = "Click Here to Win!", color = "red", fontSize = 34, handleClick }) => {
     const buttonStyle = {
         color: color,
