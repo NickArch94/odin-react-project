@@ -22,19 +22,34 @@ return (
 
 function UsersVictim() {
     const [victim, setVictim] = useState("")
+    const [age, setAge] = useState(0)
+
+    const updateVictimAge = () => {
+        setAge((prevAge) => prevAge + 1)
+    }
 
     return (
         <>
-          <h1>Create Your Own Victim to Age!</h1>
-          <input
-            type="text"
-            placeholder="Enter victim's name"
-            value={victim}
-            onChange={(event) => setVictim(event.target.value)}
+            <h1>Create Your Own Victim to Age!</h1>
+            <input
+                type="text"
+                placeholder="Enter victim's name"
+                value={victim}
+                onChange={(event) => {
+                    setVictim(event.target.value)
+                    if (event.target.value === "") setAge(0)
+                }}
             />
+            {victim && (
+                <>
+                    <h2>{victim} is {age} years old</h2>
+                    <button onClick={handleAgeIncrease}>Get Old!</button>
+                </>
+            )}
         </>
     )
 }
+
 
 export {
     Person,
