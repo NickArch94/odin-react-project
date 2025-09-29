@@ -12,7 +12,7 @@ console.log("during render, person is: ", person)
 
 return (
     <>
-      <h1>{person.name}</h1>
+      <p className="text-[35px] mt-8">{person.name}</p>
       <h2>{person.age}</h2>
       <button onClick={updatePersonAge}>Get Older!</button>
     </>
@@ -30,7 +30,7 @@ function UsersVictim() {
     return (
         <div>
             <h1>Create Your Own Victim to Age!</h1>
-            <label htmlFor="victimName">Victim Name:</label>
+            <label className="mr-8" htmlFor="victimName">Victim Name:</label>
             <input
                 id="victimName"
                 type="text"
