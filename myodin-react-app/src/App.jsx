@@ -18,16 +18,22 @@ function App() {
       </div>
       <h1>I'm Going Through Changes</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          {count} changes
+        <h3 className="mb-3">{count} Changes</h3>
+      <div className="buttons flex justify-center">
+        <button onClick={() => setCount((plusCount) => count + 1)} className="px-0.5 py-0.5 bg-blue-500 text-white rounded-md hover:bg-blue-700">
+            +
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <button onClick={() => setCount((minusCount) => {
+            if (count > 0) {
+                return count - 1
+            } else {
+            return 0
+            }
+        })} className="px-1 py-0.5 bg-red-500 text-white rounded-md hover:bg-red-700 ml-2">
+            -
+        </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      </div>
     </>
   )
 }
