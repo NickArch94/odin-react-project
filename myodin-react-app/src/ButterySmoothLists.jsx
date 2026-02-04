@@ -43,8 +43,10 @@ function ButterySmoothLists() {
         <div>
             <h1>Smoothness List:</h1>
                 <List smoothness={smoothness} />
-            <Button handleClick={handleButtonClick}/>
-            <Button text="Don't click me! I'm malware (very scary, very evil)" handleClick={() => alert("You have been hacked! Just kidding, but seriously don't click random buttons on the internet.")} color="green" fontSize={16} />
+          <div className="mt-5 space-x-5 space-y-5">
+            <Button handleClick={handleButtonClick} />
+            <Button text="Don't click me! I'm malware (very scary, very evil)" handleClick={() => alert("You have been hacked! Just kidding, but seriously don't click random buttons on the internet.")} color="green" fontSize={30} />
+          </div>
         </div>
     )
   }
